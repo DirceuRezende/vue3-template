@@ -4,6 +4,11 @@
  */
 
 export default {
+  moduleFileExtensions: ["js", "ts", "json", "vue"],
+  transform: {
+    "^.+\\.ts$": "ts-jest",
+    "^.+\\.vue$": "vue-jest",
+  },
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
