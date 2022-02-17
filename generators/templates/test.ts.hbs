@@ -1,0 +1,10 @@
+import { mount } from "@vue/test-utils";
+import {{pascalCase name}} from '.'
+
+describe("<{{pascalCase name}} />", () => {
+  it("should render", () => {
+    const wrapper = mount({{pascalCase name}});
+
+    expect(wrapper.element).toMatchSnapshot()
+  });
+});

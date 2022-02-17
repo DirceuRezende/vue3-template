@@ -18,6 +18,7 @@
     "test:e2e": "start-server-and-test dev http-get://localhost:3000 cypress",
     "cypress": "cypress run",
     "cypress:open": "cypress open",
+    "generate": "yarn plop --plopfile generators/plopfile.js",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -45,6 +46,7 @@
     "husky": "^7.0.4",
     "jest": "^26.6.3",
     "lint-staged": "^12.3.4",
+    "plop": "^3.0.5",
     "prettier": "^2.5.1",
     "sass": "^1.49.7",
     "start-server-and-test": "^1.12.5",
