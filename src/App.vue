@@ -1,16 +1,15 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "@/components/HelloWorld.vue";
+import Home from "@/views/Home.vue";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <Home msg="You did it!" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
@@ -19,5 +18,5 @@ import HelloWorld from "@/components/HelloWorld.vue";
 </template>
 
 <style lang="scss">
-@use "@/styles/global.sass";
+@use "@/styles/global.scss";
 </style>
