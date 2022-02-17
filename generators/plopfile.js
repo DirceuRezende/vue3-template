@@ -22,13 +22,13 @@ module.exports = (plop) => {
       },
       {
         type: "add",
-        path: "../src/components/{{pascalCase name}}/stories.ts",
-        templateFile: "templates/stories.ts.hbs",
+        path: "../src/components/{{pascalCase name}}/{{pascalCase name}}.stories.js",
+        templateFile: "templates/Component.stories.js.hbs",
       },
       {
         type: "add",
-        path: "../src/components/{{pascalCase name}}/test.ts",
-        templateFile: "templates/test.ts.hbs",
+        path: "../src/components/{{pascalCase name}}/{{pascalCase name}}.spec.ts",
+        templateFile: "templates/Component.spec.ts.hbs",
       },
     ],
   });

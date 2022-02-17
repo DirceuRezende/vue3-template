@@ -1,12 +1,12 @@
 <script setup lang="ts">
-defineProps<>()
-defineEmits<>()
+interface Props {
+  msg?: string;
+}
+const props = withDefaults(defineProps<Props>(), {
+  msg: "hello",
+});
 </script>
 
-<template>
-  
-</template>
+<template>{{pascalCase name}}</template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
