@@ -1,6 +1,7 @@
 {
   "name": "vue3-template",
   "version": "0.0.0",
+  "license": "MIT",
   "lint-staged": {
     "*.{js,ts}": [
       "eslint --fix",
