@@ -17,7 +17,7 @@
  */
 // eslint-disable-next-line no-unused-vars
 // eslint-disable-next-line no-undef
-module.exports = (on, config) => {
+module.exports = () => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 };
