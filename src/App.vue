@@ -1,13 +1,11 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import Home from "@/views/Home.vue";
+import Home from "@/views/Home";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <Home msg="You did it!" />
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
       </nav>

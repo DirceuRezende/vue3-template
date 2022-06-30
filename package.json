@@ -15,7 +15,7 @@
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "test": "jest",
-    "test:watch": "jest --watch --bail --findRelatedTests",
+    "test:watch": "jest --watch --bail",
     "test:ci": "jest --runInBand",
     "test:e2e": "start-server-and-test dev http-get://localhost:3000 cypress",
     "cypress": "cypress run",

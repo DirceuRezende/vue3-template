@@ -1,0 +1,17 @@
+@use '_mixins';
+
+%marginAuto {
+  @include mixins.margin-auto();
+}
+
+%clearfix {
+  @include mixins.clearfix();
+}
+
+%inlineBlock {
+  @include mixins.inline-block();
+}
+
+%hideText {
+  @include mixins.hide-text();
+}
