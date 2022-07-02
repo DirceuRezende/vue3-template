@@ -3,4 +3,4 @@
 
 yarn lint
 yarn typecheck
-yarn test
+yarn test:ci

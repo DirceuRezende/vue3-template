@@ -2,12 +2,6 @@
   "name": "vue3-template",
   "version": "0.0.0",
   "license": "MIT",
-  "lint-staged": {
-    "*.{js,ts}": [
-      "eslint --fix",
-      "yarn test --bail --findRelatedTests"
-    ]
-  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -16,7 +10,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "test": "jest",
     "test:watch": "jest --watch --bail",
-    "test:ci": "jest --runInBand",
+    "test:ci": "jest --runInBand --bail",
     "test:e2e": "start-server-and-test dev http-get://localhost:3000 cypress",
     "cypress": "cypress run",
     "cypress:open": "cypress open",
@@ -58,7 +52,6 @@
     "husky": "^8.0.1",
     "jest": "^28.1.2",
     "jest-environment-jsdom": "^28.1.2",
-    "lint-staged": "^13.0.3",
     "plop": "^3.1.1",
     "prettier": "^2.7.1",
     "sass": "^1.53.0",
