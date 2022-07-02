@@ -1,12 +1,12 @@
-import { render } from "@testing-library/vue";
-import Title from ".";
+import { render } from '@testing-library/vue';
+import Title from '.';
 
-describe("Title", () => {
-  it("should render correctly", () => {
+describe('Title', () => {
+  it('should render correctly', () => {
     const wrapper = render(Title, {
       props: {
-        value: "test",
-      },
+        value: 'test'
+      }
     });
 
     expect(wrapper).toBeDefined();

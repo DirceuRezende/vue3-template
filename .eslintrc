@@ -1,0 +1,31 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "vue/setup-compiler-macros": true
+    },
+    "extends": [
+        "plugin:vue/vue3-essential",
+        "airbnb-base",
+        "prettier",
+        "eslint:recommended",
+        "@vue/eslint-config-typescript/recommended",
+        "@vue/eslint-config-prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "parser": "@typescript-eslint/parser",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "vue",
+        "@typescript-eslint"
+    ],
+    "rules": {
+      "vue/multi-word-component-names": 0,
+      "no-plusplus": 0,
+      "import/no-unresolved": 0,
+      "import/extensions": 0,
+      "import/no-extraneous-dependencies": 0
+    }
+}
