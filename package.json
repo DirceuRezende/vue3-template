@@ -37,7 +37,7 @@
     "@storybook/vue3": "^6.5.9",
     "@testing-library/vue": "^6.6.0",
     "@types/jest": "^28.1.4",
-    "@types/node": "^18.0.0",
+    "@types/node": "^18.0.1",
     "@typescript-eslint/eslint-plugin": "^5.30.3",
     "@typescript-eslint/parser": "^5.30.3",
     "@vitejs/plugin-vue": "^2.3.3",
