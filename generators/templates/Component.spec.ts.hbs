@@ -1,9 +1,9 @@
-import { mount } from "@vue/test-utils";
-import {{pascalCase name}} from ".";
+import { render } from '@testing-library/vue';
+import {{pascalCase name}} from '.';
 
-describe("<{{pascalCase name}} />", () => {
-  it("should render", () => {
-    const wrapper = mount({{pascalCase name}});
+describe('<{{pascalCase name}} />', () => {
+  it('should render', () => {
+    const wrapper = render({{pascalCase name}});
 
     expect(wrapper).toBeDefined();
   });
