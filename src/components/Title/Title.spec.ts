@@ -10,5 +10,6 @@ describe('Title', () => {
     });
 
     expect(wrapper).toBeDefined();
+    expect(wrapper.findByText('test'));
   });
 });
