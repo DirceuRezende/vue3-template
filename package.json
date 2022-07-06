@@ -11,13 +11,20 @@
     "test": "jest",
     "test:watch": "jest --watch --bail",
     "test:ci": "jest --runInBand --bail",
-    "test:e2e": "start-server-and-test dev http-get://localhost:3000 cypress",
-    "cypress": "cypress run",
-    "cypress:open": "cypress open",
+    "test:e2e": "start-server-and-test dev http-get://localhost:3000 cy:open",
+    "test:e2e:ci": "start-server-and-test dev http-get://localhost:3000 cy:run",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
     "generate": "yarn plop --plopfile generators/plopfile.js",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix",
+      "yarn test --bail"
+    ]
   },
   "dependencies": {
     "pinia": "^2.0.14",
@@ -57,6 +64,7 @@
     "husky": "^8.0.1",
     "jest": "^28.1.2",
     "jest-environment-jsdom": "^28.1.2",
+    "lint-staged": "^13.0.3",
     "plop": "^3.1.1",
     "prettier": "^2.7.1",
     "sass": "^1.53.0",

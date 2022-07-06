@@ -1,6 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn lint
-yarn typecheck
-yarn test:ci
+npx --no-install lint-staged
