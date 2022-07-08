@@ -1,4 +1,4 @@
-import { render } from '@testing-library/vue';
+import { render, screen } from '@testing-library/vue';
 import Title from '.';
 
 describe('Title', () => {
@@ -10,6 +10,6 @@ describe('Title', () => {
     });
 
     expect(wrapper).toBeDefined();
-    expect(wrapper.findByText('test'));
+    expect(screen.findByText('test'));
   });
 });
