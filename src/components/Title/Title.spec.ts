@@ -3,13 +3,12 @@ import Title from '.';
 
 describe('Title', () => {
   it('should render correctly', () => {
-    const wrapper = render(Title, {
+    render(Title, {
       props: {
-        value: 'test'
+        value: 'Title'
       }
     });
 
-    expect(wrapper).toBeDefined();
-    expect(screen.findByText('test'));
+    expect(screen.getByText('Title')).toBeInTheDocument();
   });
 });

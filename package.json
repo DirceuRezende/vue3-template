@@ -42,6 +42,7 @@
     "@storybook/builder-vite": "^0.1.38",
     "@storybook/testing-library": "^0.0.13",
     "@storybook/vue3": "^6.5.9",
+    "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/vue": "^6.6.0",
     "@types/jest": "^28.1.4",
     "@types/node": "^18.0.2",
