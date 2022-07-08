@@ -79,12 +79,12 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase name}}/store/{{camelCase name}}/store.ts',
+        path: '../src/features/{{pascalCase name}}/store/{{camelCase name}}/{{camelCase name}}.ts',
         templateFile: 'templates/store.ts.hbs'
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase name}}/store/{{camelCase name}}/store.spec.ts',
+        path: '../src/features/{{pascalCase name}}/store/{{camelCase name}}/{{camelCase name}}.spec.ts',
         templateFile: 'templates/store.spec.ts.hbs'
       },
       {
