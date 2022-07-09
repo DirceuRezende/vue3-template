@@ -40,7 +40,7 @@
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-interactions": "^6.5.9",
     "@storybook/addon-links": "^6.5.9",
-    "@storybook/builder-vite": "^0.1.38",
+    "@storybook/builder-vite": "^0.1.39",
     "@storybook/testing-library": "^0.0.13",
     "@storybook/vue3": "^6.5.9",
     "@testing-library/jest-dom": "^5.16.4",
@@ -62,7 +62,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-vue": "^9.1.1",
+    "eslint-plugin-vue": "^9.2.0",
     "husky": "^8.0.1",
     "jest": "^28.1.2",
     "jest-environment-jsdom": "^28.1.2",
@@ -74,9 +74,9 @@
     "ts-jest": "^28.0.5",
     "ts-node": "^10.8.2",
     "typescript": "~4.7.4",
-    "vite": "^2.9.13",
+    "vite": "^2.9.14",
     "vite-plugin-eslint": "^1.6.1",
     "vue-loader": "^17.0.0",
-    "vue-tsc": "^0.38.2"
+    "vue-tsc": "^0.38.3"
   }
 }
