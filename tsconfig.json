@@ -6,7 +6,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["vite/client", "@types/jest", "cypress"],
+    "types": ["vite/client", "@types/jest", "@types/node", "cypress"],
   },
 
   "references": [

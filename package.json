@@ -27,6 +27,7 @@
     ]
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "pinia": "^2.0.14",
     "vue": "^3.2.37",
     "vue-router": "^4.1.1"
@@ -45,7 +46,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/vue": "^6.6.0",
     "@types/jest": "^28.1.4",
-    "@types/node": "^18.0.2",
+    "@types/node": "^18.0.3",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
     "@vitejs/plugin-vue": "^2.3.3",

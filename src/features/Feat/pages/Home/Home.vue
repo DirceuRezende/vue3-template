@@ -7,8 +7,8 @@ const props = withDefaults(defineProps<Props>(), {
 });
 </script>
 
-<template>{{pascalCase name}}</template>
+<template>Feat</template>
 
 <style lang="scss" scoped>
-@use '{{pascalCase name}}';
+@use 'Home';
 </style>

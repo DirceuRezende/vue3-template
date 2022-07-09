@@ -29,6 +29,11 @@ module.exports = (plop) => {
         type: 'add',
         path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.spec.ts',
         templateFile: 'templates/Component.spec.ts.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.scss',
+        templateFile: 'templates/Component.scss.hbs'
       }
     ]
   });
@@ -59,6 +64,11 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
+        path: '../src/features/{{pascalCase name}}/pages/Home/Home.scss',
+        templateFile: 'templates/Component.scss.hbs'
+      },
+      {
+        type: 'add',
         path: '../src/features/{{pascalCase name}}/components/{{pascalCase name}}/{{pascalCase name}}.spec.ts',
         templateFile: 'templates/Component.spec.ts.hbs'
       },
@@ -71,6 +81,11 @@ module.exports = (plop) => {
         type: 'add',
         path: '../src/features/{{pascalCase name}}/components/{{pascalCase name}}/{{pascalCase name}}.stories.js',
         templateFile: 'templates/Component.stories.js.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/features/{{pascalCase name}}/components/{{pascalCase name}}/{{pascalCase name}}.scss',
+        templateFile: 'templates/Component.scss.hbs'
       },
       {
         type: 'add',
@@ -96,6 +111,23 @@ module.exports = (plop) => {
         type: 'add',
         path: '../src/features/{{pascalCase name}}/routes/index.ts',
         templateFile: 'templates/routesIndex.ts.hbs'
+      }
+    ]
+  });
+  plop.setGenerator('service', {
+    description: 'Create a service',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'What is your service name?'
+      }
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: '../src/services/{{camelCase name}}/index.ts',
+        templateFile: 'templates/service.ts.hbs'
       }
     ]
   });
