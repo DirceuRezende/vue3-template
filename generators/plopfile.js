@@ -29,11 +29,6 @@ module.exports = (plop) => {
         type: 'add',
         path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.spec.ts',
         templateFile: 'templates/Component.spec.ts.hbs'
-      },
-      {
-        type: 'add',
-        path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.scss',
-        templateFile: 'templates/Component.scss.hbs'
       }
     ]
   });
@@ -64,11 +59,6 @@ module.exports = (plop) => {
       },
       {
         type: 'add',
-        path: '../src/features/{{pascalCase name}}/pages/Home/Home.scss',
-        templateFile: 'templates/Component.scss.hbs'
-      },
-      {
-        type: 'add',
         path: '../src/features/{{pascalCase name}}/components/{{pascalCase name}}/{{pascalCase name}}.spec.ts',
         templateFile: 'templates/Component.spec.ts.hbs'
       },
@@ -81,11 +71,6 @@ module.exports = (plop) => {
         type: 'add',
         path: '../src/features/{{pascalCase name}}/components/{{pascalCase name}}/{{pascalCase name}}.stories.js',
         templateFile: 'templates/Component.stories.js.hbs'
-      },
-      {
-        type: 'add',
-        path: '../src/features/{{pascalCase name}}/components/{{pascalCase name}}/{{pascalCase name}}.scss',
-        templateFile: 'templates/Component.scss.hbs'
       },
       {
         type: 'add',

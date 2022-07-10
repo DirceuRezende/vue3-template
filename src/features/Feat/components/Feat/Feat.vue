@@ -2,13 +2,7 @@
 interface Props {
   msg?: string;
 }
-const props = withDefaults(defineProps<Props>(), {
-  msg: 'hello'
-});
+defineProps<Props>();
 </script>
 
 <template>Feat</template>
-
-<style lang="scss" scoped>
-@use 'Feat';
-</style>

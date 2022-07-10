@@ -6,5 +6,5 @@ type TitleProps = {
 defineProps<TitleProps>();
 </script>
 <template>
-  <h1>{{ value }}</h1>
+  <h1 class="text-3xl font-bold underline">{{ value }}</h1>
 </template>
