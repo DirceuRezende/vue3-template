@@ -1,18 +1,25 @@
-import { fileURLToPath, URL } from 'url';
+/// <reference types="vitest" />
+
 import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
+import Vue from '@vitejs/plugin-vue';
 import eslintPlugin from 'vite-plugin-eslint';
 import AutoImport from 'unplugin-auto-import/vite';
-// https://vitejs.dev/config/
+import { fileURLToPath } from 'url';
+
 export default defineConfig({
   plugins: [
-    vue(),
+    Vue(),
     eslintPlugin(),
     AutoImport({
       dts: true,
       imports: ['vue', 'vue-router', 'pinia', 'vitest']
     })
   ],
+  test: {
+    setupFiles: './src/setupTests.ts',
+    globals: true,
+    environment: 'jsdom'
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
