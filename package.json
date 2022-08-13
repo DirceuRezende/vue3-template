@@ -8,8 +8,10 @@
     "preview": "vite preview --port 5050",
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest dev",
     "test:cov": "vitest run --coverage",
+    "test:related": "vitest related",
     "test:e2e": "start-server-and-test dev http-get://localhost:3000 cy:open",
     "test:e2e:ci": "start-server-and-test dev http-get://localhost:3000 cy:run",
     "cy:run": "cypress run",
@@ -22,7 +24,7 @@
   "lint-staged": {
     "src/**/*": [
       "yarn lint --fix",
-      "yarn test --passWithNoTests"
+      "yarn test related"
     ]
   },
   "dependencies": {

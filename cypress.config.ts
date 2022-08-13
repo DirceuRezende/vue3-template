@@ -13,6 +13,6 @@ export default defineConfig({
       return require('./cypress/plugins/index.ts')(on, config);
     },
     specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
-    baseUrl: 'http://localhost:3000'
+    baseUrl: 'http://localhost:5173'
   }
 });
