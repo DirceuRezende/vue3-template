@@ -13,6 +13,11 @@ export default defineConfig({
       imports: ['vue', 'vue-router', 'pinia', 'vitest']
     })
   ],
+  test: {
+    setupFiles: './src/setupTests.ts',
+    globals: true,
+    environment: 'jsdom'
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
